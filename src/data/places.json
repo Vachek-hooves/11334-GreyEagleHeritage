@@ -1,0 +1,74 @@
+[
+  {
+    "id": "places-1",
+    "title": "Guided Cultural Experience — Tsuut’ina Museum",
+    "tag": "TOUR",
+    "body": "Tsuut’ina Nation · Guided · By request\nDuration: Custom\nMeets: Museum\nCost: Custom\nBegin with an immersive introduction to Tsuut’ina culture through storytelling, history, language and traditions. Knowledgeable cultural guides help visitors understand the Nation from its own cultural perspective and connect historical knowledge with living traditions.\nHighlights\n Guided by knowledgeable cultural interpreters\n Introduction to Tsuut’ina history and storytelling\n Learn about language and traditions\n Cultural Museum and Gift Shop experience",
+    "latitude": 50.94303,
+    "longitude": -114.15647
+  },
+  {
+    "id": "places-2",
+    "title": "Buffalo Paddock Tour",
+    "tag": "TOUR",
+    "body": "Tsuut’ina Nation · Outdoor · Guided\nDuration: Custom\nMeets: By arrangement\nCost: Custom\nVisit the Tsuut’ina buffalo herd and discover the deep cultural and historical relationship between the buffalo, the land and the Nation. The outdoor experience combines observation with guided interpretation and cultural learning.\nHighlights\n Visit the Tsuut’ina buffalo herd\n Learn about the cultural importance of buffalo\n Connection between land and tradition\n Scenic outdoor setting\n Guided interpretation",
+    "latitude": 50.96094,
+    "longitude": -114.34369
+  },
+  {
+    "id": "places-3",
+    "title": "Tsuut’ina Museum & Gift Shop",
+    "tag": "CULTURE",
+    "body": "Tsuut’ina Nation · Museum · Cultural stop\nVisit: 1–2 hrs\nType: Museum\nSetting: Indoor\nA meaningful stop for visitors who want to explore Tsuut’ina history and contemporary culture in greater depth. Exhibits, stories and cultural interpretation introduce the Nation’s heritage, while the gift shop showcases Indigenous-made clothing, jewellery, moccasins and other works.\nHighlights\n Tsuut’ina history and cultural exhibits\n Indigenous storytelling and interpretation\n Nation-owned gift shop\n Work from Indigenous artisans\n Accessible visitor experience",
+    "latitude": 50.94303,
+    "longitude": -114.15647
+  },
+  {
+    "id": "places-4",
+    "title": "Weaselhead Flats Natural Environment Park",
+    "tag": "NATURE",
+    "body": "Nearby · Nature park · Walking\nVisit: 1–3 hrs\nType: Outdoors\nCost: Free\nA large natural area near the western side of Calgary where the Elbow River enters the Glenmore Reservoir. Forest, wetlands, pathways and wildlife make it a good option for a quiet walk after exploring the resort and surrounding Tsuut’ina area.\nHighlights\n Walking and nature trails\n Wetland and forest environments\n Birdwatching opportunities\n Connections to Glenmore Reservoir pathways",
+    "latitude": 50.995,
+    "longitude": -114.14
+  },
+  {
+    "id": "places-5",
+    "title": "Heritage Park Historical Village",
+    "tag": "HISTORY",
+    "body": "Nearby · Living history · Family visit\nVisit: 2–4 hrs\nType: Historical Park\nSetting: Indoor & Outdoor\nExplore Western Canadian history through historic buildings, recreated streets, exhibitions and interactive experiences. The large open-air museum presents several periods of regional history and works well as a longer half-day excursion.\nHighlights\n Historic buildings and recreated streets\n Living-history experiences\n Transportation and railway heritage\n Indoor and outdoor exhibitions\n Suitable for a longer visit",
+    "latitude": 50.98498,
+    "longitude": -114.10724
+  },
+  {
+    "id": "places-6",
+    "title": "The Military Museums",
+    "tag": "MUSEUM",
+    "body": "Nearby · Calgary · History\nVisit: 1–3 hrs\nType: Museum\nSetting: Indoor\nExplore Canadian military history through galleries dedicated to the Army, Royal Canadian Navy and Royal Canadian Air Force. Collections include uniforms, vehicles, aircraft, documents and historical objects connected with Canada and Alberta.\nHighlights\n Army, Navy and Air Force galleries\n Historic military vehicles and equipment\n Alberta military history\n Permanent exhibitions",
+    "latitude": 51.01356,
+    "longitude": -114.11611
+  },
+  {
+    "id": "places-7",
+    "title": "Seven Chiefs Sportsplex & Jim Starlight Centre",
+    "tag": "COMMUNITY",
+    "body": "Tsuut’ina Nation · Recreation · Community\nVisit: Varies\nType: Sportsplex\nSetting: Indoor\nA major Tsuut’ina Nation recreation and community facility that hosts sports, gatherings and community activities. It represents another side of contemporary Nation life beyond the resort and cultural-tour experience.\nHighlights\n Tsuut’ina Nation community facility\n Sports and recreation spaces\n Community gatherings and events\n Contemporary Nation setting",
+    "latitude": 50.94871,
+    "longitude": -114.14927
+  },
+  {
+    "id": "places-8",
+    "title": "Taza Park",
+    "tag": "DISCOVER",
+    "body": "Nearby · Tsuut’ina Nation · Modern destination\nVisit: Flexible\nType: Mixed-use district\nSetting: Urban\nExplore one of the major contemporary development areas on Tsuut’ina Nation. Taza represents the modern economic and commercial side of the Nation and offers another perspective on how Tsuut’ina continues to grow alongside Calgary.\nHighlights\n Located on Tsuut’ina Nation\n Modern commercial development\n Shopping and services nearby\n Easy addition to a Grey Eagle visit",
+    "latitude": 51.00294,
+    "longitude": -114.15411
+  },
+  {
+    "id": "places-9",
+    "title": "Fish Creek Provincial Park",
+    "tag": "NATURE",
+    "body": "Calgary · Provincial park · Outdoor\nVisit: 1–4 hrs\nType: Nature\nCost: Free\nOne of Calgary’s largest natural recreation areas, offering extensive pathways, river landscapes, forests and open spaces. It is a good choice for visitors who want to add hiking, cycling or a relaxed outdoor stop to their stay.\nHighlights\n Extensive walking and cycling trails\n River and natural landscapes\n Picnic and recreation areas\n Wildlife observation\n Multiple park access points",
+    "latitude": 50.92167,
+    "longitude": -114.05833
+  }
+]
