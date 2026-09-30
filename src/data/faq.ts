@@ -5,8 +5,8 @@ import { rooms } from './rooms';
 const resortQuestions = [
   {
     topic: 'Hotel',
-    q: 'Where is Grey Eagle Resort & Casino located?',
-    a: 'Grey Eagle Resort & Casino is located at 3777 Grey Eagle Drive, Tsuut’ina, Alberta, T3E 3X8, southwest of Calgary. The hotel, Event Centre, dining venues and resort facilities are within the same destination.',
+    q: 'Where is Grey Eagle Resort located?',
+    a: 'Grey Eagle Resort is located at 3777 Grey Eagle Drive, Tsuut’ina, Alberta, T3E 3X8, southwest of Calgary. The hotel, Event Centre, dining venues and resort facilities are within the same destination.',
   },
   {
     topic: 'Heritage',
@@ -134,7 +134,7 @@ export const faq = [
   {
     topic: 'Dining',
     q: 'What is Little Chief Restaurant?',
-    a: 'Little Chief is a restaurant at Grey Eagle Resort & Casino whose culinary concept includes Indigenous influences. Dining there can form part of a cultural-tour experience.',
+    a: 'Little Chief is a restaurant at Grey Eagle Resort whose culinary concept includes Indigenous influences. Dining there can form part of a cultural-tour experience.',
   },
   {
     topic: 'Dining',

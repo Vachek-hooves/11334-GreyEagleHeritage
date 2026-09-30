@@ -1,4 +1,4 @@
-package com.greyeaglecasinoheritage
+package com.greyeagle.heritage
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
