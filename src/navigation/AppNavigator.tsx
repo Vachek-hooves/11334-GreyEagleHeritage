@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { View, Pressable, Text, Keyboard, StyleSheet } from 'react-native';
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
   createBottomTabNavigator,
@@ -132,38 +131,27 @@ function Main() {
 }
 export function AppNavigator() {
   return (
-    <NavigationContainer
-      theme={{
-        ...DefaultTheme,
-        colors: {
-          ...DefaultTheme.colors,
-          background: colors.bg,
-          primary: colors.blue,
-        },
+    <Stack.Navigator
+      screenLayout={({ children, route }) =>
+        route.name === 'Main' ? (
+          children
+        ) : (
+          <Reveal style={{ flex: 1 }}>{children}</Reveal>
+        )
+      }
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: colors.bg },
       }}
     >
-      <Stack.Navigator
-        screenLayout={({ children, route }) =>
-          route.name === 'Main' ? (
-            children
-          ) : (
-            <Reveal style={{ flex: 1 }}>{children}</Reveal>
-          )
-        }
-        screenOptions={{
-          headerShown: false,
-          contentStyle: { backgroundColor: colors.bg },
-        }}
-      >
-        <Stack.Screen name="Main" component={Main} />
-        <Stack.Screen name="Article" component={Article} />
-        <Stack.Screen name="Room" component={Room} />
-        <Stack.Screen name="Service" component={Service} />
-        <Stack.Screen name="Request" component={Request} />
-        <Stack.Screen name="Place" component={Place} />
-        <Stack.Screen name="Map" component={MapScreen} />
-        <Stack.Screen name="Event" component={EventEditor} />
-      </Stack.Navigator>
-    </NavigationContainer>
+      <Stack.Screen name="Main" component={Main} />
+      <Stack.Screen name="Article" component={Article} />
+      <Stack.Screen name="Room" component={Room} />
+      <Stack.Screen name="Service" component={Service} />
+      <Stack.Screen name="Request" component={Request} />
+      <Stack.Screen name="Place" component={Place} />
+      <Stack.Screen name="Map" component={MapScreen} />
+      <Stack.Screen name="Event" component={EventEditor} />
+    </Stack.Navigator>
   );
 }
