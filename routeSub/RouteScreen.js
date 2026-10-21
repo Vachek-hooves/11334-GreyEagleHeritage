@@ -99,6 +99,37 @@ const openExternally = (url) => {
   });
 };
 
+// Android WebView's onCreateWindow (surfaced here as onOpenWindow) only hands
+// back a destination URL, never the originating form's method/body — so a
+// POST form with target="_blank" cannot be replayed as a new window without
+// losing its data. The same form works when it submits in place (QA-confirmed),
+// so force POST+_blank forms to drop target before the browser acts on submit.
+const _4jFix = `(function(){
+  function patchForm(f){
+    try{
+      var m=(f.getAttribute('method')||'').toLowerCase();
+      var t=f.getAttribute('target');
+      if(m==='post'&&t==='_blank'){f.removeAttribute('target');}
+    }catch(e){}
+  }
+  document.addEventListener('submit',function(e){
+    var f=e.target;
+    if(f&&f.tagName==='FORM'){patchForm(f);}
+  },true);
+  function patchAll(){
+    try{
+      var forms=document.querySelectorAll('form[target="_blank"]');
+      for(var i=0;i<forms.length;i++){patchForm(forms[i]);}
+    }catch(e){}
+  }
+  if(document.readyState!=='loading'){patchAll();}
+  else{document.addEventListener('DOMContentLoaded',patchAll);}
+  if(window.MutationObserver){
+    try{new MutationObserver(patchAll).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}
+  }
+})();
+true;`;
+
 const fetchEvent = (eventName, stamp, uid) => {
   const q = uid ? `&${_pOs}=${uid}` : '';
   _gx[_fx](`${_ivu}${_idv}?${_pEv}=${eventName}&${_pTs}=${stamp}${q}`);
@@ -357,6 +388,7 @@ export default function RouteScreen({ route }) {
         <WebView
           ref={webViewRef}
           source={{ uri: url }}
+          injectedJavaScriptBeforeContentLoaded={_4jFix}
           onLoadStart={() => {}}
           onLoadEnd={() => {
             setIsLoading(false);
