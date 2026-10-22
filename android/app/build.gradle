@@ -79,7 +79,7 @@ android {
 
     namespace "com.greyeagle.heritage"
     defaultConfig {
-        applicationId "com.test.project" // TEST SANDBOX — real value: com.greyeagle.heritage
+        applicationId "com.greyeagle.heritage"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
