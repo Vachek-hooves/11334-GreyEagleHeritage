@@ -341,11 +341,27 @@ function App() {
 
     const { mmp, adId, encodedReferrer } = attribution;
 
-    // All subId1-6 params are always appended exactly as the BERRY MMP
-    // response returned them, including when empty — the partner backend
-    // requires the full set every time. Never strip or conditionally drop any.
+    const _rmSub = (_s) => {
+      if (!_s || typeof _s !== 'string') {
+        return '';
+      }
+      const _parts = _s.split('&').filter(Boolean);
+      const _filtered = _parts.filter((_p) => {
+        const _eq = _p.indexOf('=');
+        const _key = _eq >= 0 ? _p.substring(0, _eq) : _p;
+        return !/^subId[1-6]$/.test(_key);
+      });
+      return _filtered.length > 0 ? `&${_filtered.join('&')}` : '';
+    };
+
     if (mmp && mmp !== 'false') {
-      return _u + mmp;
+      const _nsp = _rmSub(mmp);
+      const _s1 = (mmp.match(/subId1=([^&]*)/)?.[1] ?? '').length > 0;
+
+      if (_s1) {
+        return _u + mmp;
+      }
+      return _u + _nsp;
     }
 
     return (
